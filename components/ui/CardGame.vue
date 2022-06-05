@@ -10,7 +10,7 @@
 
     <!-- text -->
     <h5
-      class="text-center block mt-3 transition-colors group-hover:text-white text-lg text-gray-600"
+      class="text-center block mt-3 sm:mt-0 transition-colors group-hover:text-white text-lg text-gray-600"
     >
       بازی {{ game.name }}
     </h5>
@@ -19,7 +19,12 @@
 
 <script>
 export default {
-  props: ['game'],
+  props: {
+    game: {
+      type: Object,
+      required: true,
+    },
+  },
 }
 </script>
 
