@@ -1,6 +1,6 @@
 <template>
   <a
-    class="transition-colors p-5 rounded-2xl border border-pink-600 hover:bg-pink-600 group"
+    class="transition-colors p-5 rounded-2xl border border-pink-300 hover:bg-pink-600 group"
     href="#"
   >
     <!-- image -->
