@@ -1,17 +1,27 @@
 <template>
   <a
-    class="transition-colors p-5 rounded-2xl border border-pink-300 hover:bg-pink-600 group"
+    class="transition-colors p-5 rounded-2xl border border-pink-300 hover:bg-pink-600 group shadow flex flex-col sm:flex-row-reverse justify-center items-center sm:justify-between"
     href="#"
   >
     <!-- image -->
-    <div class="w-24 h-24 mx-auto card-image">
-      <img src="/img/dice.png" alt="dice" class="" />
+    <div class="w-24 h-24 card-image flex justify-center items-center">
+      <img :src="game.image.path" :alt="game.image.name" class="w-12" />
     </div>
 
     <!-- text -->
-    <h5 class="text-center block mt-3 group-hover:text-white">بازی تاس</h5>
+    <h5
+      class="text-center block mt-3 transition-colors group-hover:text-white text-lg text-gray-600"
+    >
+      بازی {{ game.name }}
+    </h5>
   </a>
 </template>
+
+<script>
+export default {
+  props: ['game'],
+}
+</script>
 
 <style scoped>
 .card-image {
