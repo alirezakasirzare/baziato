@@ -2,3 +2,9 @@ body {
   direction: rtl;
   font-family: IRANSans;
 }
+
+/* dark mode */
+
+.dark body {
+  /* background-color: ; */
+}
