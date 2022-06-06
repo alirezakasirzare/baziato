@@ -1,6 +1,5 @@
 <template>
   <section class="container">
-    <ThemeToggler />
     <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-4">
       <CardGame v-for="(game, index) in games" :key="index" :game="game" />
     </div>
