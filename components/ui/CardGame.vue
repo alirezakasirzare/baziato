@@ -1,6 +1,6 @@
 <template>
   <a
-    class="transition-colors p-5 rounded-2xl hover:bg-primary group shadow flex flex-col sm:flex-row-reverse justify-center items-center sm:justify-between border-t-2 border-primary-sm"
+    class="transition-colors p-5 rounded-2xl hover:bg-primary dark:hover:bg-yellow-500 group shadow flex flex-col sm:flex-row-reverse justify-center items-center sm:justify-between border-t-2 border-primary-sm dark:border-yellow-300 dark:bg-gray-700"
     href="#"
   >
     <!-- image -->
@@ -10,7 +10,7 @@
 
     <!-- text -->
     <h5
-      class="text-center block mt-3 sm:mt-0 transition-colors group-hover:text-white text-lg text-gray-600"
+      class="text-center block mt-3 sm:mt-0 transition-colors group-hover:text-white text-lg text-gray-600 dark:text-gray-200"
     >
       بازی {{ game.name }}
     </h5>

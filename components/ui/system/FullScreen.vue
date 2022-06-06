@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded-full text-gray-600 text-lg h-full flex items-center px-2 btn"
+    class="rounded-full text-gray-600 text-lg h-full flex items-center px-2 btn dark:text-gray-200"
     @click="changeMode"
   >
     <i class="fal" :class="icon"></i>
