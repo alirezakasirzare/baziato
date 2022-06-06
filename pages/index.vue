@@ -1,7 +1,11 @@
 <template>
   <section class="container">
     <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-4">
-      <CardGame v-for="(game, index) in games" :key="index" :game="game" />
+      <CardGame
+        v-for="(game, index) in searchGames"
+        :key="index"
+        :game="game"
+      />
     </div>
   </section>
 </template>
@@ -11,6 +15,7 @@ export default {
   name: 'IndexPage',
   data() {
     return {
+      searchText: '',
       games: [
         {
           name: 'دوز پیشرفته',
@@ -30,6 +35,21 @@ export default {
         },
       ],
     }
+  },
+
+  computed: {
+    searchGames() {
+      const finalSearchText = this.searchText.toLowerCase()
+      return this.games.filter((game) =>
+        game.name.toLowerCase().includes(finalSearchText)
+      )
+    },
+  },
+
+  mounted() {
+    this.$nuxt.$on('searchGame', (text) => {
+      this.searchText = text
+    })
   },
 }
 </script>

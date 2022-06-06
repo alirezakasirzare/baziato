@@ -9,6 +9,7 @@
       <!-- input -->
       <div class="px-5 w-full border-r">
         <input
+          v-model="searchText"
           type="text"
           class="border-none rounded p-0.5 outline-none text-gray-600 block w-full"
           placeholder="جستجو بازی ..."
@@ -23,3 +24,19 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      searchText: '',
+    }
+  },
+
+  watch: {
+    searchText(text) {
+      this.$nuxt.$emit('searchGame', text)
+    },
+  },
+}
+</script>
