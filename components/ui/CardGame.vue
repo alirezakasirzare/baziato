@@ -1,6 +1,6 @@
 <template>
   <a
-    class="transition-colors p-5 rounded-2xl border border-primary-sm hover:bg-primary group shadow flex flex-col sm:flex-row-reverse justify-center items-center sm:justify-between"
+    class="transition-colors p-5 rounded-2xl hover:bg-primary group shadow flex flex-col sm:flex-row-reverse justify-center items-center sm:justify-between border-t-2 border-primary-sm"
     href="#"
   >
     <!-- image -->

@@ -1,5 +1,5 @@
 <template>
-  <header class="mb-10 py-2 border-b-2 border-pink-100">
+  <header class="mb-10 py-2 shadow border-t-4 border-primary">
     <div class="container flex">
       <!-- name -->
       <h1 class="ml-5 text-lg font-medium">
