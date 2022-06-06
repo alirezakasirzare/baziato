@@ -1,6 +1,8 @@
 body {
   direction: rtl;
   font-family: IRANSans;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 /* dark mode */

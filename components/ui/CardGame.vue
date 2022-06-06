@@ -10,7 +10,7 @@
 
     <!-- text -->
     <h5
-      class="text-center block mt-3 sm:mt-0 transition-colors group-hover:text-white text-lg text-gray-600 dark:text-gray-200"
+      class="text-center block mt-3 sm:mt-0 transition-colors group-hover:text-white text-lg text-gray-600 dark:text-gray-200 dark:group-hover:text-gray-700"
     >
       بازی {{ game.name }}
     </h5>
