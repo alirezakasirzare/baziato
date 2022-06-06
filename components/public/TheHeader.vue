@@ -10,14 +10,15 @@
       <div class="px-5 w-full border-r">
         <input
           type="text"
-          class="border-none w-72 rounded p-0.5 outline-none text-gray-600 block w-full"
+          class="border-none rounded p-0.5 outline-none text-gray-600 block w-full"
           placeholder="جستجو بازی ..."
         />
       </div>
 
       <!-- buttons -->
-      <div>
+      <div class="flex gap-1">
         <DarkMode />
+        <FullScreen />
       </div>
     </div>
   </header>

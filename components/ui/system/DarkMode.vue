@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded-full text-gray-600 text-lg h-full flex items-center px-2 hover:text-primary"
+    class="rounded-full text-gray-600 text-lg h-full flex items-center px-2 btn"
     @click="changeMode"
   >
     <i class="fal" :class="icon"></i>
@@ -23,3 +23,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.btn:hover .fal {
+  font-weight: bold !important;
+}
+</style>
